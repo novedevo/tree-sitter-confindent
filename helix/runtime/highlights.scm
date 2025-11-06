@@ -1,0 +1,3 @@
+(key) @variable
+(value) @string
+

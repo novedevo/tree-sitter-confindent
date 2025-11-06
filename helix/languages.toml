@@ -1,0 +1,8 @@
+[[language]]
+name = "confindent"
+scope = "source.confindent"
+file-types = ["confindent", "conf"]
+
+[[grammar]]
+name = "confindent"
+source.path = "/insert/path/here/tree-sitter-confindent"
