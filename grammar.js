@@ -12,14 +12,12 @@ module.exports = grammar({
 
   rules: {
     // TODO: add external scanner for proper child support (dedents...)
-    source_file: $ => repeat($._definition),
+    source_file: $ => repeat($.definition),
 
-    definition: $ => seq($.key, $.value),
+    definition: $ => seq($.key, optional($.value)),
 
     key: $ => /[^ \t]+/,
 
-    value: $ => optional($._simple_value),
-
-    _simple_value: $ => /[^\n]+/,
+    value: $ => /[^\n]+/,
   }
 });
