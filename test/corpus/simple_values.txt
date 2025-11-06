@@ -1,0 +1,34 @@
+========
+Simple values
+========
+
+Key Value
+key Value
+key_with$pecial_char@cters value with spaces
+	indented value
+	indented value
+
+---
+
+(source_file
+	(definition
+		(key)
+		(value)
+	)
+	(definition
+		(key)
+		(value)
+	)
+	(definition
+		(key)
+		(value)
+	)
+	(definition
+		(key)
+		(value)
+	)
+	(definition
+		(key)
+		(value)
+	)
+)

@@ -14,7 +14,7 @@ module.exports = grammar({
     // TODO: add external scanner for proper child support (dedents...)
     source_file: $ => repeat($.definition),
 
-    definition: $ => seq($.key, optional($.value)),
+    definition: $ => seq($.key, optional($.value), /\n/),
 
     key: $ => /[^ \t]+/,
 
