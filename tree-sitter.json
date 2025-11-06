@@ -1,0 +1,40 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "confindent",
+      "camelcase": "Confindent",
+      "title": "Confindent",
+      "scope": "source.confindent",
+      "file-types": [
+        "confindent"
+      ],
+      "injection-regex": "^confindent$",
+      "class-name": "TreeSitterConfindent"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "ISC",
+    "description": "tree-sitter implementation for the Confindent configuration language",
+    "authors": [
+      {
+        "name": "Devon Sawatsky",
+        "email": "devon@nove.dev",
+        "url": "https://nove.dev/"
+      }
+    ],
+    "links": {
+      "repository": "https://tangled.org/@nove.dev/tree-sitter-confindent"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}

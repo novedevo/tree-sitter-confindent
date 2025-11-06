@@ -1,0 +1,17 @@
+/**
+ * @file tree-sitter implementation for the Confindent configuration language
+ * @author Devon Sawatsky <devon@nove.dev>
+ * @license ISC
+ */
+
+/// <reference types="tree-sitter-cli/dsl" />
+// @ts-check
+
+module.exports = grammar({
+  name: "confindent",
+
+  rules: {
+    // TODO: add the actual grammar rules
+    source_file: $ => "hello"
+  }
+});
