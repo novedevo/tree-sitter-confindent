@@ -11,7 +11,15 @@ module.exports = grammar({
   name: "confindent",
 
   rules: {
-    // TODO: add the actual grammar rules
-    source_file: $ => "hello"
+    // TODO: add external scanner for proper child support (dedents...)
+    source_file: $ => repeat($._definition),
+
+    definition: $ => seq($.key, $.value),
+
+    key: $ => /[^ \t]+/,
+
+    value: $ => optional($._simple_value),
+
+    _simple_value: $ => /[^\n]+/,
   }
 });
