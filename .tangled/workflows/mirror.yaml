@@ -1,0 +1,13 @@
+when:
+  - event: ["push"]
+    branch: ["main"]
+engine: nixery
+clone:
+  depth: 2147483646
+steps:
+  - name: set-remote
+    command: "git remote add github \"https://novedevo:${GITHUB_PAT}@github.com/novedevo/tree-sitter-confindent.git\""
+  - name: set-branch
+    command: "git switch -c main"
+  - name: push
+    command: "git push github main --force"
